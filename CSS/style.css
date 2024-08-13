@@ -54,14 +54,14 @@ body {
 ul {
   list-style: none;
 }
-/* end generale styles */
+/* end general styles */
 
 .container {
   width: 90%;
   margin: 0 auto;
 }
 
-/* start header and nav ber style */
+/* start header and nav bar style */
 #navigation-vw {
   width: 100%;
   background-color: var(--second-background-color);
@@ -77,7 +77,7 @@ ul {
   height: 70px;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .navigation-bar #menu-btn {
@@ -88,7 +88,8 @@ ul {
 }
 
 #navigation-vw .navigation-bar .logo a img {
-  width: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 #navigation-vw .navigation-bar .navigations ul {
@@ -111,9 +112,9 @@ ul {
   color: var(--special-color);
 }
 
-/* end header and nav ber style */
+/* end header and nav bar style */
 
-/* start home tyle */
+/* start home style */
 
 #home {
   display: flex;
@@ -128,8 +129,15 @@ ul {
   text-align: center;
 }
 
+#home .content h1 #c1 {
+  font-size: 90px;
+  color: rgb(16, 78, 97);
+  margin: 20px 0;
+  line-height: 0;
+}
+
 #home .content h1 {
-  font-size: 100px;
+  font-size: 70px;
   margin: 20px 0;
   line-height: 1;
 }
@@ -168,12 +176,8 @@ ul {
 }
 
 .section-image img {
-  width: 100%;
+  width: 75%;
 }
-
-/* end home style */
-
-/* sart count section style */
 
 .count {
   display: grid;
@@ -227,6 +231,7 @@ ul {
 .about .content {
   flex: 1 1 40rem;
   text-align: center;
+  font-weight: 700;
 }
 
 .about .content h3 {
@@ -238,10 +243,6 @@ p {
   color: var(--main-color);
   line-height: 2;
 }
-
-/* end about section style */
-
-/* start course section style */
 
 .courses {
   margin-top: var(--section-margin);
@@ -292,75 +293,6 @@ p {
 .swiper-pagination-clickable .swiper-pagination-bullet-active {
   background-color: var(--special-color);
 }
-
-/* end course section style */
-
-/* start teachers section style */
-
-.teachers {
-  margin-top: var(--section-margin);
-}
-
-.swiper .slide.teacher {
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-  background-color: inherit;
-  margin-bottom: 1.5rem;
-}
-
-.teachers .slide.teacher .image img {
-  width: 100%;
-  height: 30rem;
-  object-fit: cover;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-.teacher .share {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  top: 10px;
-  left: -50px;
-}
-
-.teacher:hover > .share {
-  left: 10px;
-}
-
-.teacher .share a {
-  padding-top: 7px;
-  height: 40px;
-  width: 40px;
-  border-radius: 5px;
-  background-color: var(--white);
-  text-align: center;
-  font-size: 25px;
-  color: var(--main-background-color);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-.teacher .share a:hover {
-  background-color: var(--special-color);
-}
-
-.teacher h3 {
-  text-align: center;
-  margin-top: 1.5rem;
-  color: var(--white);
-}
-
-/* end teachers section style */
-
-/* start reviews section style */
 
 .reviews {
   margin-top: var(--section-margin);
