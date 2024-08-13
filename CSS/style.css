@@ -65,7 +65,7 @@ ul {
 #navigation-vw {
   width: 100%;
   background-color: var(--second-background-color);
-  position: fixed;
+  position: relative;
   z-index: 1000;
   top: 0;
 }
