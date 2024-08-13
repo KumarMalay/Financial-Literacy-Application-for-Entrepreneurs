@@ -39,13 +39,14 @@ html {
 }
 
 :root {
-  --main-background-color: #3d3d3d;
-  --second-background-color: #4b4b4b;
-  --main-color: #aaa;
-  --special-color: #00e77f;
-  --white: white;
+  --main-background-color: #e9f3ff; /* Light Blue */
+  --second-background-color: #96c9ff; /* Sky Blue */
+  --main-color: #22313f; /* Dark Blue */
+  --special-color: #34495e; /* Steel Blue */
+  --white: #1a252f; /* Navy Blue */
   --section-margin: 20px;
 }
+
 
 body {
   background-color: var(--main-background-color);

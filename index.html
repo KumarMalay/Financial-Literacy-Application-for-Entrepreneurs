@@ -22,15 +22,15 @@
       <nav class="navigation-bar container">
         <div class="logo">
           <a href="#home" class="logo"
-            ><img src="image/1.jpg" alt=""
+            ><img src="image/1.png" alt=""
           /></a>
         </div>
         <div class="navigations">
           <ul>
             <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
             <li><a href="#courses">courses</a></li>
             <li><a href="#contact">contact us</a></li>
-            <li><a href="#about">about</a></li>
           </ul>
         </div>
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -45,7 +45,7 @@
           <span>courses</span>
         </h1>
 
-        <a class="btn" href="#">contact us</a>
+        <a class="btn" href="#contact">contact us</a>
       </div>
       <div class="section-image">
         <img src="image/2.svg" alt="" />
@@ -280,54 +280,48 @@
           <img src="images/contact-img.svg" alt="" />
         </div>
 
-        <form action="" method="post">
-          <span>your name</span>
-          <input
-            type="text"
-            required
-            placeholder="Enter your full name"
-            maxlength="50"
-            name="name"
-            class="box"
-          />
-          <span>your email</span>
-          <input
-            type="email"
-            required
-            placeholder="enter your valid email"
-            maxlength="50"
-            name="email"
-            class="box"
-          />
-          <span>your number</span>
-          <input
-            type="number"
-            required
-            placeholder="enter your valid number"
-            max="9999999999"
-            min="0"
-            name="number"
-            class="box"
-            onkeypress="if(this.value.length == 10) return false;"
-          />
-          <span>select course</span>
-          <select name="couses" class="box" required>
-            <option value="" disabled selected>select the course --</option>
-            <option value="Business Planning">Business Planning</option>
-            <option value="Funding">Funding</option>
-            <option value="Financial Management">Financial Management</option>
-            <option value="Tax Strategies">Tax Strategies</option>
-            <option value="Accounting Basics">Accounting Basics</option>
-          </select>
-          <span>select gender</span>
-          <div class="radio">
-            <input type="radio" name="gender" value="male" id="male" />
-            <label for="male">male</label>
-            <input type="radio" name="gender" value="female" id="female" />
-            <label for="female">female</label>
+        <form action="" method="post" class="form-container">
+          <h2>Contact Us</h2>
+  
+          <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" class="box" placeholder="Enter your full name" maxlength="50" required>
           </div>
-          <input type="submit" value="send message" class="btn" name="send" />
-        </form>
+  
+          <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" class="box" placeholder="Enter your valid email" maxlength="50" required>
+          </div>
+  
+          <div class="form-group">
+              <label for="number">Your Number</label>
+              <input type="number" id="number" name="number" class="box" placeholder="Enter your valid number" max="9999999999" min="0" required onkeypress="if(this.value.length == 10) return false;">
+          </div>
+  
+          <div class="form-group">
+              <label for="courses">Select Course</label>
+              <select id="courses" name="courses" class="box" required>
+                  <option value="" disabled selected>Select the course --</option>
+                  <option value="Business Planning">Business Planning</option>
+                  <option value="Funding">Funding</option>
+                  <option value="Financial Management">Financial Management</option>
+                  <option value="Tax Strategies">Tax Strategies</option>
+                  <option value="Accounting Basics">Accounting Basics</option>
+              </select>
+          </div>
+  
+          <div class="form-group gender">
+              <label>Select Gender</label>
+              <div class="radio">
+                  <input type="radio" name="gender" value="male" id="male">
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" value="female" id="female">
+                  <label for="female">Female</label>
+              </div>
+          </div>
+  
+          <button type="submit" class="btn" name="send">Send Message</button>
+      </form>
       </div>
     </section>
 
