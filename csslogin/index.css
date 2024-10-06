@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #05182b; /* Light Blue */
+  color: #e5eef6; /* Navy Blue */
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  color: #92c4f5; /* Steel Blue */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Links */
+a {
+  color: #1187f5; /* Dark Blue */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #92c4f5; /* Steel Blue */
+}
+
+input,
+button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 2rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background-color: #1187f5; /* Dark Blue */
+  color: #e5eef6; /* Navy Blue */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #92c4f5; /* Steel Blue */
+}
+
+/* Forms */
+.form-container {
+  background-color: #173a5f; /* Sky Blue */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #92c4f5; /* Steel Blue */
+  border-radius: 5px;
+  background-color: #05182b; /* Light Blue */
+  color: #e5eef6; /* Navy Blue */
+}
+
+/* Navigation */
+.navigation-bar {
+  background-color: #173a5f; /* Sky Blue */
+  padding: 10px 0;
+}
+
+.navigation-bar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation-bar ul li a {
+  color: #e5eef6; /* Navy Blue */
+  font-weight: bold;
+}
+
+/* Cards */
+.card {
+  background-color: #173a5f; /* Sky Blue */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Progress bar */
+.progress-bar {
+  background-color: #05182b; /* Light Blue */
+  border-radius: 5px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: #1187f5; /* Dark Blue */
+  height: 100%;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .navigation-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation-bar ul li {
+    margin-bottom: 10px;
+  }
+}
