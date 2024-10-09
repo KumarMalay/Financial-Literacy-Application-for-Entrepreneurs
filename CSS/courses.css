@@ -1,0 +1,22 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    text-transform: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+
+  }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: #1187f5;
+}
+
+.container {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}

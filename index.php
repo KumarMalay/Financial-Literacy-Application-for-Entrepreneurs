@@ -117,7 +117,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide slide">
             <div class="image">
-              <img src="images/course-1.svg" alt="" srcset="" />
+              <a href="courses.php"><img src="images/course-1.svg" alt="" srcset="" />
             </div>
             <div class="content">
               <h3>Business planning</h3>
@@ -128,6 +128,7 @@
                 entrepreneurs map out their vision, secure funding, and navigate challenges by providing a clear roadmap for decision-making and growth
               </p>
             </div>
+            </a>
           </div>
           <div class="swiper-slide slide">
             <div class="image">
@@ -338,7 +339,7 @@
         <a href="" class="fab fa-github"></a>
       </div>
       <div class="copy-right container">
-        copyright &copy; Made in India
+        Copyright &copy; Made in India
         <a href=""></a>
       </div>
     </footer>
