@@ -1,3 +1,24 @@
+<?php
+session_start();
+require_once 'config.php';
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$stmt = $pdo->prepare("SELECT name FROM users WHERE id = ?");
+$stmt->execute([$_SESSION['user_id']]);
+$user = $stmt->fetch();
+
+// Check if the logout request is made
+if (isset($_GET['logout'])) {
+    session_destroy();
+    header("Location: login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,11 +52,14 @@
             <li><a href="#about">About</a></li>
             <li><a href="#courses">Courses</a></li>
             <li><a href="#contact">Contact Us</a></li>
+            <!-- <li><a href="#contact">Logout</a></li> -->
+            <li><a href="?logout=true">Logout</a></li>
           </ul>
         </div>
         <div id="menu-btn" class="fas fa-bars"></div>
       </nav>
     </header>
+    <h2>Welcome, <?php echo htmlspecialchars($user['name']); ?>!</h2>
     <!-- Home -->
     <section id="home" class="container">
       <!-- <div class="content1">
@@ -264,7 +288,7 @@
       </div>
     </section>
 
-    <section class="contact container" id="contact">
+    <!-- <section class="contact container" id="contact">
       <h1 class="heading">
         <span>CONTACT</span>
         <span>US</span>
@@ -316,7 +340,7 @@
           <button type="submit" class="btn" name="send">Send Message</button>
       </form>
       </div>
-    </section>
+    </section> -->
 
     <div class="scroll-to-top"></div>
 
